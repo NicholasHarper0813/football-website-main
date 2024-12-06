@@ -1,0 +1,331 @@
+/* fonts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* starter style  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    --header-background: #2d25a0;
+}
+
+
+/* header section design start  */
+
+header {
+    background-color: var(--header-background);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+
+/* ---------------------------------------------
+
+---------------------------------Nav Menu section Design Start  */
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+nav .nav-menu-right {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: normal;
+    /* transform: 1s; */
+}
+
+nav a:hover {
+    background-color: #e02c6d;
+    transition: color 0.5s ease-in, background-color 0.5s ease-in-out;
+}
+
+nav .login {
+    margin-right: 15px;
+}
+
+button {
+    background-color: #e02c6d;
+    border: none;
+    color: white;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #e02c6d;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav .nav-menu-right .button .fa-long-arrow-alt-right {
+    margin-right: 6px;
+}
+
+
+/* ---------------------------------------------------
+-------------------------------------------Nav Menu section Design End  */
+
+.header-hero {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.header-hero .header-hero-left h1 {
+    font-size: 50px;
+}
+
+.header-hero-right img {
+    width: 557px;
+    height: 438px;
+}
+
+.watch-now-button {
+    width: 140px;
+    padding: 10px;
+}
+
+.watch-now {
+    margin-right: 10px;
+}
+
+
+/* --------------------------------------
+-------------------------------------header section design End  */
+
+
+/* --------------------------------------
+-------------------------------------Main section design Start  */
+
+
+/* -------------------------------------
+-----------------------------------------players section design start  */
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.players {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    margin-bottom: 150px;
+}
+
+.player {
+    width: 330px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 10px 10px;
+    box-shadow: 0px 0px 40px rgb(216, 216, 216);
+}
+
+.players .player .player-picture img {
+    width: 300px;
+    height: 256px;
+}
+
+.player-title,
+.player-bio {
+    width: 300px;
+}
+
+.player-title {
+    margin: 10px 0px;
+}
+
+p {
+    font-size: 15px;
+}
+
+
+/* -------------------------------------
+-----------------------------------------players section design End  */
+
+
+/* -------------------------------
+----------------------------------------highlights section design start  */
+
+.highlights {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.highlights .highlights-left {
+    margin-right: 60px;
+}
+
+.highlights .highlights-left h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.highlights .highlights-left p {
+    margin: 20px 0px;
+}
+
+.highlights .highlights-right img {
+    width: 567px;
+    height: 427px;
+}
+
+
+/* -------------------------------------
+------------------------------------highlights section design End  */
+
+
+/* --------------------------------------
+-------------------------------------Main section design End  */
+
+
+/* --------------------------------------
+-------------------------------------Footer section design Start  */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.footer-section {
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img img {
+    width: 483.87px;
+    height: 110px;
+}
+
+.footer-icon img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+/* --------------------------------------
+-------------------------------------Footer section design End  */
+
+@media screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        justify-content: flex-end;
+    }
+    .nav-menu-left {
+        display: none;
+    }
+    .header-hero {
+        flex-direction: column;
+    }
+    .header-hero-right img {
+        margin-top: 70px;
+        width: 100%;
+        height: 100%;
+    }
+    .login-button,
+    .signup-button,
+    .watch-now {
+        font-size: 20px;
+    }
+    .button {
+        font-size: 20px;
+    }
+    .watch-now-button {
+        width: 190px;
+        margin-top: 20px;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .player {
+        width: 380px;
+        height: 500px;
+    }
+    .players .player .player-picture img {
+        width: 350px;
+        height: 300px;
+    }
+    .player-title,
+    .player-bio {
+        width: 350px;
+    }
+    .player-title {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    /* .highlights {
+        display: none;
+    } */
+    .highlights {
+        flex-direction: column;
+    }
+    .highlights .highlights-right img {
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+    }
+    .highlights .highlights-left h1 {
+        font-size: 32px;
+        font-weight: 900;
+    }
+    .footer-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
