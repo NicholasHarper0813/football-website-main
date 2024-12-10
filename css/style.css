@@ -1,9 +1,5 @@
-/* fonts  */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 /* starter style  */
-
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +15,7 @@ body {
     --header-background: #2d25a0;
 }
 
-
 /* header section design start  */
-
 header {
     background-color: var(--header-background);
     color: white;
@@ -30,11 +24,6 @@ header {
     align-items: center;
     padding-bottom: 80px;
 }
-
-
-/* ---------------------------------------------
-
----------------------------------Nav Menu section Design Start  */
 
 nav {
     width: 80%;
@@ -91,9 +80,7 @@ nav .nav-menu-right .button .fa-long-arrow-alt-right {
     margin-right: 6px;
 }
 
-
-/* ---------------------------------------------------
--------------------------------------------Nav Menu section Design End  */
+/* --For My Friend-- */
 
 .header-hero {
     display: flex;
@@ -120,18 +107,6 @@ nav .nav-menu-right .button .fa-long-arrow-alt-right {
 .watch-now {
     margin-right: 10px;
 }
-
-
-/* --------------------------------------
--------------------------------------header section design End  */
-
-
-/* --------------------------------------
--------------------------------------Main section design Start  */
-
-
-/* -------------------------------------
------------------------------------------players section design start  */
 
 main {
     display: flex;
@@ -179,14 +154,6 @@ p {
     font-size: 15px;
 }
 
-
-/* -------------------------------------
------------------------------------------players section design End  */
-
-
-/* -------------------------------
-----------------------------------------highlights section design start  */
-
 .highlights {
     width: 85%;
     display: flex;
@@ -212,18 +179,6 @@ p {
     width: 567px;
     height: 427px;
 }
-
-
-/* -------------------------------------
-------------------------------------highlights section design End  */
-
-
-/* --------------------------------------
--------------------------------------Main section design End  */
-
-
-/* --------------------------------------
--------------------------------------Footer section design Start  */
 
 .footer {
     display: flex;
@@ -251,10 +206,6 @@ p {
     cursor: pointer;
     margin-right: 10px;
 }
-
-
-/* --------------------------------------
--------------------------------------Footer section design End  */
 
 @media screen and (max-width: 480px) {
     body {
